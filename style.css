@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(snow.jpeg);
+    background-size: 1fr;
+    background-attachment: scroll;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.head {
+    text-align: center;
+    margin: 30px 150px 30px 150px;
+    background-color: wheat;
+    border: 10px violet;
+    border-style: double;
+}
+
+h1 {
+    font-style: oblique;
+}
+
+.weather-window {
+    width: 40%;
+    border-style: groove;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-image: url(weather.jpg);
+    background-size: сover;
+    background-repeat: round;
+    border-style: groove;
+    width: 30%;
+    height: 100%;
+}
+
+.select-city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10%;
+    background-image: url(city.jpg);
+    background-size: сover;
+    background-repeat: round;
+    padding-bottom: 300px;
+    border-style: groove;
+    width: 30%;
+    height: 100%;
+}
+
+#city {
+    background-color: rgb(235, 217, 217);
+    border-style: groove;
+    border: 1px solid black;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-style: italic;
+    padding: 10px 10px 10px 10px;
+}
+
+span h6 {
+    background-color: rgb(235, 217, 217);
+    border-style: groove;
+    border: 1px solid black;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-style: italic;
+    padding: 10px 10px 10px 10px;
+}
+
+@media (max-width: 900px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .select-city {
+        width: 70%;
+        height: 100%;
+    }
+    .weather-window {
+        width: 70%;
+        height: 100%;
+    }
+}
+
+.window {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 5px wheat;
+    border-style: double;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#city-name {
+    font-weight: bold;
+    background-color: violet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 0 10px 0;
+}
+
+#temp {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#rainfall {
+    background-color: thistle;
+}
+
+
+#wind {
+    background-color: yellowgreen;
+}
+
+.footer {
+    background-color: black;
+    color: wheat;
+    font-size: 14px;
+    border: 1px wheat;
+    border-style: double;
+}
